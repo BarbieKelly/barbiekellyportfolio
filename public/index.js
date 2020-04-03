@@ -33,20 +33,28 @@ var Projects = [
 ]
 
 var softwareSkills = [
+    "React",
+    "Redux",
+    "JavaScript",
+    "Node.js", 
+    "Express", 
+    "RESTful API",  
+    "JQuery", 
     "PostgreSQL",
-    "RESTful API",
     "Express",
     "Heroku",
     "Sequelize",
-    "JavaScript",
-    "Node.js",
     "BootStrap",
-    "React"
+    "Debugging", 
+    "Git",
+    "Github",
+    "HTML",
+    "CSS"
 ]
 
 var civilSkills = [
     "autoCAD",
-    "arcGIS"
+    "arcGIS",
 ]
 
 var createProjectSection = function (arrayLocation) {
@@ -54,9 +62,9 @@ var createProjectSection = function (arrayLocation) {
     divA.className = "project-section";
     divA.id="project_"+arrayLocation.id;
     var divB = document.createElement("div");
-    divB.className="row";
+    divB.className="project-container";
     var divC = document.createElement("div");
-    divC.className = "col-5 project-name-column";
+    divC.className = "project-name-column";
     var heading2 = document.createElement("h2");
     heading2.innerHTML=arrayLocation.heading2;
     var heading6 = document.createElement("h6");
@@ -79,7 +87,7 @@ var createProjectSection = function (arrayLocation) {
 
 
         var divD = document.createElement("div");
-        divD.className = "col project-image-column";
+        divD.className = "project-image-column";
         var tagline = document.createElement("a");
         tagline.href = arrayLocation.weblink;
         var tagline_image = document.createElement("IMG");
@@ -112,6 +120,82 @@ var createProjectSection = function (arrayLocation) {
     }
     portfolio_section.appendChild(divA);
 }
+
+// var createProjectSection = function (arrayLocation) {
+//     var divA = document.createElement("div");
+//     divA.className = "project-section";
+//     divA.id="project_"+arrayLocation.id;
+
+//     var divB = document.createElement("div");
+//     divB.className = "project-container";
+
+//     var divC = document.createElement("div");
+//     divC.className = "project-name-column";
+
+//     var heading2 = document.createElement("h2");
+//     heading2.innerHTML=arrayLocation.heading2;
+//     var heading6 = document.createElement("h6");
+//     heading6.innerHTML=arrayLocation.heading6;
+
+//     divC.appendChild(heading2);
+//     divC.appendChild(heading6);
+
+//     divB.appendChild(divC);
+    
+
+//     if (arrayLocation.paragraph) {
+//         var paragraph = document.createElement("p");
+//         paragraph.innerHTML = arrayLocation.paragraph;
+//         divC.appendChild(paragraph);
+
+//         var gitHub = document.createElement("a");
+//         gitHub.href = arrayLocation.githubLink;
+//         gitHub.target = "_blank";
+//         gitHub.innerHTML = "GitHub Repo";
+//         divC.appendChild(gitHub);
+
+        
+
+//         var divD = document.createElement("div");
+//         divD.className = "project-image-column";
+//         var tagline = document.createElement("a");
+//         tagline.href = arrayLocation.weblink;
+//         var tagline_image = document.createElement("IMG");
+//         tagline_image.className = "project-image";
+//         tagline_image.id = arrayLocation.name;
+//         tagline_image.src = arrayLocation.imagesrc;
+//         tagline_image.alt = arrayLocation.imagealt;
+//         tagline.appendChild(tagline_image);
+//         divD.appendChild(tagline);
+
+        
+
+//         var technologies_used = document.createElement("p");
+//         technologies_used.className = "bold";
+//         technologies_used.innerHTML = "technologies used:";
+        
+//         var divF = document.createElement ("div");
+//         divF.className = "technologies_container";
+
+//         for (i=0; i<arrayLocation.technologies.length; i++) {
+//             var newButton = document.createElement("div");
+//             newButton.className = "btn-3";
+//             newButton.innerHTML=arrayLocation.technologies[i];
+//             divF.appendChild(newButton);
+//         }
+//     }
+    
+//     divB.appendChild(divD);
+
+//     divA.appendChild(divB);
+
+//     if (technologies_used) {
+//         divA.appendChild(technologies_used);
+//         divA.appendChild(divF);
+//     }
+
+//     portfolio_section.appendChild(divA);
+// }
 
 
 var createSkillsSections = function (){
