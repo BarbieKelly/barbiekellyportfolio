@@ -17,7 +17,7 @@ var Projects = [
         paragraph: "Before you leave is a web application that allows the user to manage their household more effectively. It is a homepage that provides a place to organize your to do lists, shopping lists, and provides the daily news",
         weblink: "https://beforeyouleave.herokuapp.com/",
         githubLink: "https://github.com/cbasinger/SecondProject",
-        imagesrc: "../../public/Before_You_Leave.JPG",
+        imagesrc: "public/Before_You_Leave.JPG",
         imagealt: "screenshot of Before You Leave website",
         technologies: [
             "PostgreSQL",
