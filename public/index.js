@@ -116,6 +116,7 @@ var createProjectSection = function (arrayLocation) {
         divD.className = "project-image-column";
         var tagline = document.createElement("a");
         tagline.href = arrayLocation.weblink;
+        tagline.target = "_blank";
         var tagline_image = document.createElement("IMG");
         tagline_image.className = "project-image";
         tagline_image.id = arrayLocation.name;
