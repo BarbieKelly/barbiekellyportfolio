@@ -31,17 +31,18 @@ hosted on Fast.io
     </header>
     <main>
         <div class="container">
+            <button id="topScrollButton" title="Go to Top"><img id="favicon-scroll" src="public/favicon-scroll.ico" alt="scroll"></button>
             <div id="nav-section">
                 <img id="headshot" src="public/BarbieKelly.jpg" alt="headshot of Barbie Kelly">
                 <h3 id="portfolio_name">Barbie Kelly</h3>
                 <h4 id="portfolio_title_1">Software Developer</h2>
                 <h4 id="portfolio_title_2">Civil Engineer</h2>
                 <ul class="nav navbar-nav">
-                    <li><a href="#about_section">About</a></li>
-                    <li><a href="#portfolio_section">Portfolio</a></li>
-                    <li><a href="#skills_section">Skills</a></li>
-                    <li><a href="#contact_section">Contact</a></li>
-                    <li><a href="#resume_section">Resume</a></li>
+                    <li><a class="nav-link" href="#about_section">About</a></li>
+                    <li><a class="nav-link" href="#portfolio_section">Portfolio</a></li>
+                    <li><a class="nav-link" href="#skills_section">Skills</a></li>
+                    <li><a class="nav-link" href="#contact_section">Contact</a></li>
+                    <li><a class="nav-link" href="#resume_section">Resume</a></li>
                 </ul>
                 <div class="social-icons">
                     <a href="mailto:barbara.kelly892@gmail.com?subject=let's create something" 
@@ -74,20 +75,22 @@ hosted on Fast.io
                         and to determine the extent of structural damage.
                     </p>
                 </div>
+                <div class="page-break"></div>
                 <div class="page-section" id="portfolio_section">
                     <h1>Portfolio</h1>
                 </div>
+                <div class="page-break"></div>
                 <div class="page-section" id="skills_section">
                     <h1>Technologies</h1>
                     <div class="skills">
-                        <p class="bold">software development:</p>
                         <div class="skills_container" id="softwareDevelopmentSkills"></div>
                     </div>
+                    <div class="with-border"></div>
                     <div class="skills">
-                        <p class="bold">civil engineering:</p>
                         <div class="skills_container" id="CivilEngineeringSkills"></div>
                     </div>
                 </div>
+                <div class="page-break"></div>
                 <div class="page-section" id="contact_section">
                     <h1>Contact Me</h1>
                     <div class="contact_container">
@@ -119,6 +122,7 @@ hosted on Fast.io
                         </p>
                     </div>
                 </div>
+                <div class="page-break"></div>
                 <div class="page-section" id="resume_section">
                     <h1>Resume</h1>
                     <div>
@@ -134,11 +138,12 @@ hosted on Fast.io
                 </div>
             </div>
         </div>
-
-       
         
+
     </main>
-    <footer></footer>
+    <footer>
+
+    </footer>
 </body>
     <script type="text/javascript" src="public/index.js"></script>
 </html>

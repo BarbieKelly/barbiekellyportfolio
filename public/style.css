@@ -1,6 +1,9 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     min-width: 100%;
-    /* ok */
 }
 
 .container {
@@ -62,6 +65,7 @@ body {
         padding: 25px;
         width: 100%;
         position: relative;
+        margin-bottom: 25px;
     }
     .btn-3, .btn-4{
         width: 32%;
@@ -75,15 +79,31 @@ body {
     .skills {
         text-align: center;
     }
-    
+
+    .navbar-nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .navbar-nav li {
+        text-align: center;
+        width: 20%;
+    }
 }
 
+.nav-link {
+    transition: all 0.7s linear;
+}
 
 .page-section {
+    padding: 10px;
     text-align: center;
-    padding: 25px;
+}
+
+.page-break {
+    margin: 15px 0px 15px 0px;
     border-bottom: 5px solid rgb(226, 240, 213);
-    /* ok */
 }
 
 #headshot {
@@ -91,7 +111,6 @@ body {
     display: inline-block;
     width: 100%;
     max-width: 200px;
-    /* ok */
     height: auto;
 }
 
@@ -181,7 +200,6 @@ button {
 .project-image {
     display: inline-block;
     width: 100%;
-    /* max-width: 425px; */
     height: auto;
     border-style: solid;
     border-color: black;
@@ -234,6 +252,7 @@ button {
 
 
 .with-border{
+    margin: 5px 0px 5px 0px;
     border-bottom: 2px solid lightgrey;
 }
 
@@ -262,7 +281,21 @@ button {
 }
 
 i {
-    /* font-size: 2em !important; */
     color: black;
     font-size: 37px !important;
 }
+
+#topScrollButton {
+    /* display: none; */
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0px;
+}
+
+
+/* #E2F0D5 */
